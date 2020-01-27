@@ -21,6 +21,14 @@ section {
   border: 2px solid lightgrey;
 }
 
+.cardBox:hover {
+  cursor: pointer;
+}
+
+.cardBox:nth-last-child(1) {
+  margin-bottom: 20px;
+}
+
 .img {
   grid-row: 1;
   margin-top: 5px;
@@ -43,10 +51,16 @@ section {
 }
 
 .price {
+  display: inline-flex;
+  justify-content: space-between;
   grid-row: 3;
   text-align: center;
   align-items: center;
   font-weight: 700;
   font-size: 25px;
   border-top: 2px solid whitesmoke;
+}
+
+.price span {
+    font-size: 15px;
 }
