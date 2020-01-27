@@ -1,0 +1,98 @@
+.menu_item .active {
+  color: red;
+}
+
+.tilaa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.phone {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form {
+  width: 600px;
+}
+
+input {
+  padding: 6px;
+  width: 200px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+label {
+  padding: 6px;
+}
+
+.name {
+  margin-right: 17px;
+}
+
+.lastNameInput {
+  margin-right: 5px;
+}
+
+.email {
+  margin-right: 8px;
+}
+
+.phone {
+  margin-right: 5px;
+}
+
+.button {
+  margin-top: 25px;
+}
+
+textarea {
+  border-radius: 4px;
+  width: 100%;
+  height: 100px;
+  resize: none;
+  padding: 6px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 5px 15px 5px 15px;
+  float: right;
+  font-weight: 700;
+  margin-bottom: 50px;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: lightcoral;
+  border: 1px solid lightcoral;
+}
+
+.orderResult {
+  display: none;
+  position: absolute;
+  top: 200px;
+  width: 400px;
+  height: 200px;
+  border-radius: 5px;
+  background-color: rgba(87, 168, 141, 0.9);
+}
+
+.orderText {
+  margin-top: 80px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+}

@@ -1,0 +1,8 @@
+.menu_item .active {
+  color: red;
+}
+
+.text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
