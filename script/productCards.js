@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   let cardsSection = document.querySelector('section')
-  let cardsData = '../script/db.json'
+  let cardsData = 'script/db.json'
 
 
   const createCard = (id, img, price, about) => {
