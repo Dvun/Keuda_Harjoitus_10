@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  let cardsSection = document.querySelector('section')
+  let productsBox = document.querySelector('.productsBox')
   let cardsData = 'script/db.json'
 
 
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cardBox.innerHTML = `<div class="img">
                             <img src=${img} alt="key">
                           </div>
-                          <div class="text">
+                          <div class="productText">
                             <p>${about}</p>
                           </div>
                           <div class="price">
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
       let price = cardsData[i].price
       let about = cardsData[i].about
       
-      cardsSection.append(createCard(id, image, price, about))
+      productsBox.append(createCard(id, image, price, about))
       }
     }
 

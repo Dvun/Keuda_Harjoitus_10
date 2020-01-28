@@ -1,3 +1,5 @@
+//compress: true
+
 *,
 *:after,
 *:before {
@@ -32,7 +34,8 @@ header {
   margin-top: 50px;
   display: grid;
   grid-row: 1;
-  grid-column: 1 / 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
   border: 1px solid grey;
   border-radius: 0 0 5px 5px;
   background-color: grey;
@@ -60,53 +63,18 @@ section {
 footer {
   display: grid;
   grid-row: 3;
-  grid-column: 1 / 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
   border-radius: 5px 5px 0 0;
   widows: 100%;
   border: 1px solid grey;
   background-color: grey;
 }
 
-logo {
-  width: 150px;
-  justify-self: center;
-}
-
-logo img {
-  width: 150px;
-  height: 50px;
-}
-
-.company {
-  justify-self: center;
-}
-
-.company p {
-  font-weight: 700;
-  font-size: 25px;
-}
-
-.navbar {
-  margin-top: 20px;
-  margin-left: 30px;
-}
-
-.menu {
-  list-style: none;
-}
-
-.menu_item {
-  margin-bottom: 20px;
-}
-
-.menu_item a {
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 700;
-  color: black;
-}
-
-.menu_item a:hover {
-  text-decoration: none;
-  color: red;
-}
+@import 'header.less';
+@import 'yhteystiedot.less';
+@import 'tuotteet.less';
+@import 'tilaa.less';
+@import 'tietoa.less';
+@import 'footer.less';
+@import 'aside.less';
