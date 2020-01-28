@@ -28,11 +28,12 @@ body {
 header {
   margin-top: 50px;
   display: grid;
+  grid-template-columns: 1fr 10fr;
   grid-row: 1;
   grid-column-start: 1;
   grid-column-end: 3;
-  border: 1px solid grey;
   border-radius: 0 0 5px 5px;
+  border: 1px solid grey;
   background-color: grey;
 }
 aside {
@@ -63,17 +64,20 @@ footer {
   background-color: grey;
 }
 logo {
+  grid-column: 1;
   width: 150px;
   height: 50px;
-  justify-self: center;
+  margin: 0;
+  padding: 0;
 }
 logo img {
   width: 150px;
   height: 50px;
 }
 .company {
-  align-items: center;
+  grid-column: 2;
   justify-self: center;
+  margin-top: 40px;
 }
 .company .companyName {
   font-weight: 700;
