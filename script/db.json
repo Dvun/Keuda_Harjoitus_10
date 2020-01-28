@@ -1,31 +1,31 @@
 [
-{"id": "00001", "image": "../images/productImages/pic1.jpg",   "price": "500",      "about": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis aperiam odio id aliquid distinctio qui."},
+{"id": "00001", "image": "images/productImages/pic1.jpg",   "price": "500",      "about": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis aperiam odio id aliquid distinctio qui."},
 
-{"id": "00002", "image": "../images/productImages/pic2.jpg",   "price": "50",       "about": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem tenetur asperiores temporibus. Ratione repudiandae quidem distinctio atque excepturi minus dolores."},
+{"id": "00002", "image": "images/productImages/pic2.JPG",   "price": "50",       "about": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem tenetur asperiores temporibus. Ratione repudiandae quidem distinctio atque excepturi minus dolores."},
 
-{"id": "00005", "image": "../images/productImages/pic5.jpg",   "price": "29",       "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quod placeat, illo aliquam, magni quis nisi dignissimos aperiam asperiores quisquam ullam in nostrum numquam et?"},
+{"id": "00005", "image": "images/productImages/pic5.jpg",   "price": "29",       "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quod placeat, illo aliquam, magni quis nisi dignissimos aperiam asperiores quisquam ullam in nostrum numquam et?"},
 
-{"id": "00003", "image": "../images/productImages/pic3.jpg",   "price": "60",       "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, voluptatibus."},
+{"id": "00003", "image": "images/productImages/pic3.jpg",   "price": "60",       "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, voluptatibus."},
 
-{"id": "00004", "image": "../images/productImages/pic4.jpg",   "price": "35",       "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis tempore quasi amet quas quae tenetur?"},
+{"id": "00004", "image": "images/productImages/pic4.jpg",   "price": "35",       "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis tempore quasi amet quas quae tenetur?"},
 
-{"id": "00006", "image": "../images/productImages/pic6.jpg",   "price": "29",       "about": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae consequatur voluptatum provident. Vitae!"},
+{"id": "00006", "image": "images/productImages/pic6.jpg",   "price": "29",       "about": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae consequatur voluptatum provident. Vitae!"},
 
-{"id": "00007", "image": "../images/productImages/pic7.jpg",   "price": "35.90",    "about": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum maxime magni illo harum ab, deleniti natus!"},
+{"id": "00007", "image": "images/productImages/pic7.jpg",   "price": "35.90",    "about": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum maxime magni illo harum ab, deleniti natus!"},
 
-{"id": "00008", "image": "../images/productImages/pic8.jpg",   "price": "44",       "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet incidunt reprehenderit omnis minus provident nobis exercitationem similique sint debitis."},
+{"id": "00008", "image": "images/productImages/pic8.jpg",   "price": "44",       "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet incidunt reprehenderit omnis minus provident nobis exercitationem similique sint debitis."},
 
-{"id": "00009", "image": "../images/productImages/pic9.jpg",   "price": "80",       "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis modi laudantium, molestias est magni voluptates harum quo ipsa optio asperiores culpa nesciunt eligendi."},
+{"id": "00009", "image": "images/productImages/pic9.jpg",   "price": "80",       "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis modi laudantium, molestias est magni voluptates harum quo ipsa optio asperiores culpa nesciunt eligendi."},
 
-{"id": "00010", "image": "../images/productImages/pic10.jpg",  "price": "46",       "about": "Lorem ipsum dolor sit amet."},
+{"id": "00010", "image": "images/productImages/pic10.jpg",  "price": "46",       "about": "Lorem ipsum dolor sit amet."},
 
-{"id": "00011", "image": "../images/productImages/pic11.jpg",  "price": "31",       "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus fuga ut est autem animi aliquid neque et nemo!"},
+{"id": "00011", "image": "images/productImages/pic11.jpg",  "price": "31",       "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus fuga ut est autem animi aliquid neque et nemo!"},
 
-{"id": "00012", "image": "../images/productImages/pic12.jpg",  "price": "45.99",    "about": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam praesentium eos nihil aspernatur magnam!"},
+{"id": "00012", "image": "images/productImages/pic12.jpg",  "price": "45.99",    "about": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam praesentium eos nihil aspernatur magnam!"},
 
-{"id": "00013", "image": "../images/productImages/pic13.jpg",  "price": "70",       "about": "Lorem ipsum dolor sit amet, consectetur adipisicing."},
+{"id": "00013", "image": "images/productImages/pic13.jpg",  "price": "70",       "about": "Lorem ipsum dolor sit amet, consectetur adipisicing."},
 
-{"id": "00014", "image": "../images/productImages/pic14.jpg",  "price": "65",       "about": "Lorem ipsum dolor sit."},
+{"id": "00014", "image": "images/productImages/pic14.jpg",  "price": "65",       "about": "Lorem ipsum dolor sit."},
 
-{"id": "00015", "image": "../images/productImages/pic15.jpg",  "price": "37.55",    "about": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias at, cumque placeat neque velit dolores recusandae accusamus est consequatur vero facere!"}
+{"id": "00015", "image": "images/productImages/pic15.jpg",  "price": "37.55",    "about": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias at, cumque placeat neque velit dolores recusandae accusamus est consequatur vero facere!"}
 ]
