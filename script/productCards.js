@@ -27,16 +27,37 @@ document.addEventListener('DOMContentLoaded', () => {
   request.send()
 
   request.onload = function() {
+
     let cardsData = request.response
-    for (let i = 0; i < cardsData.length; i++) {
-      let id = cardsData[i].id
-      let image = cardsData[i].image
-      let price = cardsData[i].price
-      let about = cardsData[i].about
-      
+
+    Object.keys(cardsData).forEach(key => {
+      let id = cardsData[key].id
+      let image = cardsData[key].image
+      let price = cardsData[key].price
+      let about = cardsData[key].about
       productsBox.append(createCard(id, image, price, about))
-      }
+
+      return cardsData
+    })
+
+    let cardBox = document.querySelectorAll('.cardBox')
+    for (let i = 0; i < cardBox.length; i++) {
+      let card = cardBox[i]
+      card.addEventListener('mousemove', event => {
+        event.preventDefault()
+        console.log(event);
+      })
     }
+  }
+    
+   
+    
+  
+  
+  createCard.onmousemove = () => {
+    console.log('on the card');
+    
+  }
 
 
     
