@@ -43,11 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let cardBox = document.querySelectorAll('.cardBox')
     for (let i = 0; i < cardBox.length; i++) {
       let card = cardBox[i]
-      card.addEventListener('mousemove', event => {
+      card.addEventListener('mouseover', event => {
         event.preventDefault()
-        let cardText = document.querySelector('.productText')
-        console.log();
-        event.target.innerHTML = 'Tilaa'
+        let cardText = event.target.querySelector('.productText')
+        cardText.innerHTML = 'Tilaa'
       })
     }
   }
