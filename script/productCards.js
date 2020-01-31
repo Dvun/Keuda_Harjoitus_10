@@ -45,18 +45,11 @@ document.addEventListener('DOMContentLoaded', () => {
       let card = cardBox[i]
       card.addEventListener('mousemove', event => {
         event.preventDefault()
-        console.log(event);
+        let cardText = document.querySelector('.productText')
+        console.log();
+        event.target.innerHTML = 'Tilaa'
       })
     }
-  }
-    
-   
-    
-  
-  
-  createCard.onmousemove = () => {
-    console.log('on the card');
-    
   }
 
 
