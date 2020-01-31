@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <img src=${img} alt="key">
                           </div>
                           <div class="productText">
-                            <p>${about}</p>
+                            <p class="aboutText">${about}</p>
                           </div>
                           <div class="price">
                             <span>ID: ${id}</span>
@@ -43,14 +43,20 @@ document.addEventListener('DOMContentLoaded', () => {
     let cardBox = document.querySelectorAll('.cardBox')
     for (let i = 0; i < cardBox.length; i++) {
       let card = cardBox[i]
-      card.addEventListener('mouseover', event => {
+      card.addEventListener('mouseenter', event => {
         event.preventDefault()
-        let cardText = event.target.querySelector('.productText')
-        cardText.className = 'tilaa'
-        cardText.innerHTML = 'Tilaa'
-        
-        card.onmouseout = () => {
-          console.log('out');
+        let cardText = event.target.querySelector('.aboutText')
+        cardText.style.color = 'red'
+        cardText.style.alignSelf = 'center'
+        cardText.style.fontSize = '25px'
+        cardText.style.display = 'flex'
+        cardText.innerText = 'Tilaa'
+      })
+
+      card.addEventListener('mouseleave', event => {
+        event.preventDefault()
+        for (let i = 0; i < cardsData.length; i++) {
+          console.log(cardsData[i].about);
         }
       })
     }
