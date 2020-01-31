@@ -48,16 +48,18 @@ document.addEventListener('DOMContentLoaded', () => {
         let cardText = event.target.querySelector('.aboutText')
         cardText.style.color = 'red'
         cardText.style.alignSelf = 'center'
-        cardText.style.fontSize = '25px'
+        cardText.style.fontSize = '30px'
         cardText.style.display = 'flex'
+        cardText.style.transition = '0.5s'
         cardText.innerText = 'Tilaa'
       })
 
       card.addEventListener('mouseleave', event => {
         event.preventDefault()
-        for (let i = 0; i < cardsData.length; i++) {
-          console.log(cardsData[i].about);
-        }
+        Object.keys(cardsData).forEach(key => {
+          console.log(cardsData[key]);
+          
+        })
       })
     }
   }
