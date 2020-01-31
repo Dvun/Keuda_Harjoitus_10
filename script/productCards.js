@@ -46,7 +46,12 @@ document.addEventListener('DOMContentLoaded', () => {
       card.addEventListener('mouseover', event => {
         event.preventDefault()
         let cardText = event.target.querySelector('.productText')
+        cardText.className = 'tilaa'
         cardText.innerHTML = 'Tilaa'
+        
+        card.onmouseout = () => {
+          console.log('out');
+        }
       })
     }
   }
