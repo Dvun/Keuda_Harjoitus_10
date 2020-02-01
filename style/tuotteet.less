@@ -7,24 +7,26 @@
 .productsBox {
   display: flex;
   flex-wrap: wrap;
-}
-
-.cardBox {
-  display: grid;
-  grid-template-rows: 160px 100px 40px;
-  margin-left: 20px;
-  margin-top: 20px;
-  width: 200px;
-  height: 300px;
-  border-radius: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
-  background-color: lightgrey;
-  border: 2px solid lightgrey;
-}
-
-.cardBox:hover {
-  cursor: pointer;
+  .cardBox {
+    display: grid;
+    grid-template-rows: 160px 100px 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: lightgrey;
+    border: 2px solid lightgrey;
+    .tilaa {
+      height: 28px;
+      margin: 5px auto;
+    }
+    .katso {
+    }
+  }
+  
 }
 
 .cardBox:nth-last-child(1) {
@@ -52,6 +54,7 @@
   display: flex;
   justify-content: center;
   .aboutText {
+    text-align: center;
     font-size: 13px;
   }
 }
@@ -70,3 +73,65 @@
 .price span {
     font-size: 15px;
 }
+
+.katsoWindow {
+  display: none;
+  border: 3px solid grey;
+  border-radius: 4px;
+  position: fixed;
+  left: 650px;
+  width: 800px;
+  height: 500px;
+  background-color: white;
+  .imgAndText {
+    display: flex;
+    .tuoteImg {
+      border-right: 1px solid grey;
+      border-bottom: 1px solid grey;
+      width: 350px;
+      height: 250px;
+    }
+    .tuoteText {
+      margin-top: 40px;
+      padding-left: 10px;
+      padding-right: 10px;
+      top: 50px;
+      left: 250px;
+      width: 100%;
+    }
+  }
+  .priceAndId {
+    position: fixed;
+    margin-left: 120px;
+    width: 100px;
+    margin-top: 350px;
+    display: flex;
+    flex-direction: column;
+    .tuoteID {
+      text-align: center;
+      font-weight: 700;
+      top: 300px;
+      left: 60px;
+    }
+    .hinta {
+      margin-top: 10px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 25px;
+    }
+  }
+  
+  
+  .tilaa {
+    position: absolute;
+    bottom: 2px;
+    right: 1px;
+  }
+  .close {
+    position: absolute;
+    background-color: white;
+    top: 1px;
+    left: 752px;
+    margin-top: 0px;
+  }
+} 

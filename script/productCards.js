@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   let productsBox = document.querySelector('.productsBox')
+  let katsoWindow = document.querySelector('.katsoWindow')
   let cardsData = 'script/db.json'
 
 
@@ -46,21 +47,38 @@ document.addEventListener('DOMContentLoaded', () => {
       card.addEventListener('mouseenter', event => {
         event.preventDefault()
         let cardText = event.target.querySelector('.aboutText')
-        cardText.style.color = 'red'
-        cardText.style.alignSelf = 'center'
-        cardText.style.fontSize = '30px'
-        cardText.style.display = 'flex'
-        cardText.style.transition = '0.5s'
-        cardText.innerText = 'Tilaa'
-      })
+        cardText.innerHTML = `<button class="tilaa"><a href="../tilaa.html">Tilaa</a></button>
+                              <button class="katso">Katso lisää</button>`
+        
+                            
+        let katso = document.querySelector('.katso')
+        katso.onclick = () => {
+          katsoWindow.style.display = 'flex'
+          let tuoteImg = document.querySelector('.tuoteImg')
+          let tuoteText = document.querySelector('.tuoteText')
+          let tuoteID = document.querySelector('.tuoteID')
+          let tuoteHinta = document.querySelector('.hinta')
+          tuoteID.innerHTML = `<span>ID: ${cardsData[i].id}</span>`
+          tuoteHinta.innerHTML = `<span>${cardsData[i].price} &#8364;</span>`
+          tuoteImg.innerHTML = `<img class="tuoteImg" src=${cardsData[i].image}>`
+          tuoteText.innerHTML = cardsData[i].about
+        }
+        
 
-      card.addEventListener('mouseleave', event => {
-        event.preventDefault()
-        Object.keys(cardsData).forEach(key => {
-          console.log(cardsData[key]);
-          
+        card.addEventListener('mouseleave', event => {
+          event.preventDefault()
+          Object.keys(cardsData).forEach(key => {
+            cardText.style.color = 'black'
+            cardText.style.fontSize = '13px'
+            cardText.style.transition = 'none'
+            cardText.innerText = cardsData[i].about
+          })
         })
-      })
+      })      
+    }
+    let closeWindow = document.querySelector('.close')
+    closeWindow.onclick = () => {
+      katsoWindow.style.display = 'none'
     }
   }
 

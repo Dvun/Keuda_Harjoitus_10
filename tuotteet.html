@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="shortcut icon" href="https://gamepedia.cursecdn.com/goldenrush_gamepedia/6/64/Favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="https://gamepedia.cursecdn.com/goldenrush_gamepedia/6/64/Favicon.ico"
+    type="image/x-icon">
   <link rel="stylesheet" href="style/style.css">
   <title>Harjoitus 10</title>
 </head>
@@ -14,11 +15,18 @@
 
   <div class="container">
     <header>
-      <logo>
-        <img src="images/logo.png" alt="Logo">
-      </logo>
+      <svg height="130" width="210">
+        <defs>
+          <linearGradient id="grad1" x1="0%" y1="0%" x2="70%" y2="0%">
+            <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+            <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+          </linearGradient>
+        </defs>
+        <ellipse cx="110" cy="55" rx="100" ry="40" fill="url(#grad1)" />
+        <text fill="#ffffff" font-size="20" font-family="Verdana" x="30" y="61">Best WorldShop</text>
+      </svg>
       <div class="company">
-        <p class="companyName">MyCompany</p>
+        <p class="companyName">Our Best WorldShop</p>
       </div>
     </header>
 
@@ -35,19 +43,31 @@
 
     <section>
       <div class="productsBox">
+        <div class="katsoWindow">
+          <div class="imgAndText">
+            <div class="tuoteImg"></div>
+            <p class="tuoteText"></p>
+          </div>
+          <div class="priceAndId">
+            <span class="tuoteID"></span>
+            <span class="hinta"></span>
+          </div>
+          <button class="close">X</button>
+          <button class="tilaa"><a href="tilaa.html">Tilaa</a></button>
+        </div>
         <!-- HERE IS COMING PRODUCTS CARD BY JAVASCRIPT -->
       </div>
     </section>
 
     <footer>
       <div class="footer">
-        <p>Our Good Company</p>
+        <p>© 2020 All Rights Reserved</p>
       </div>
     </footer>
 
   </div>
 
-  <script src="script/productCards.js"></script>
+  <script src="./script/productCards.js"></script>
 </body>
 
 </html>
