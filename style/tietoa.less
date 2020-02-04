@@ -1,30 +1,31 @@
-//main: style.less
+// main: style.less
 
 .menu_item .active {
   color: red;
 }
 
 .aboutCompany {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  .company {
-    text-align: center;
-    h3 {
-      font-size: 30px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    .company {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
     }
-  }
-  .text {
-    font-size: 15px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .video {
-    display: grid;
-    justify-items: center;
-    margin-bottom: 10px;
-  }
+    .text {
+      font-size: 15px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .video {
+      display: grid;
+      justify-items: center;
+      margin-bottom: 10px;
+    }
+  } 
 }
+
 
 
 

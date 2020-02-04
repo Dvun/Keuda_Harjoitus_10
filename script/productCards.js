@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
       card.addEventListener('mouseenter', event => {
         event.preventDefault()
         let cardText = event.target.querySelector('.aboutText')
-        cardText.innerHTML = `<button class="tilaa"><a href="../tilaa.html">Tilaa</a></button>
+        cardText.innerHTML = `<button class="tilaa"><a href="tilaa.html">Tilaa</a></button>
                               <button class="katso">Katso lisää</button>`
         
                             

@@ -11,22 +11,29 @@
 </head>
 <body>
 
-  <div class="container">
-    <header>
-      <svg height="130" width="210">
-        <defs>
-          <linearGradient id="grad1" x1="0%" y1="0%" x2="70%" y2="0%">
-            <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
-            <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
-          </linearGradient>
-        </defs>
-        <ellipse cx="110" cy="55" rx="100" ry="40" fill="url(#grad1)" />
-        <text fill="#ffffff" font-size="20" font-family="Verdana" x="30" y="61">Best WorldShop</text>
-      </svg>
-      <div class="company">
-        <p class="companyName">Our Best WorldShop</p>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <svg height="130" width="210">
+          <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="70%" y2="0%">
+              <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+              <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <ellipse cx="110" cy="55" rx="100" ry="40" fill="url(#grad1)" />
+          <text fill="#ffffff" font-size="20" font-family="Verdana" x="30" y="61">Best WorldShop</text>
+        </svg>
       </div>
-    </header>
+      <div class="company">
+        <h1 class="companyName">Our Best WorldShop</h1>
+      </div>
+      <div class="registerLoginBtn">
+        <a class="register registrBtn" href="#">Register</a>
+        <a class="register loginBtn" href="#">Login</a>
+      </div>
+    </div>
+  </header>
 
     <aside>
       <nav class="navbar">
@@ -51,7 +58,6 @@
           </div>
         </div>
         <div class="map">
-          <small><a target="_blank" href="https://www.openstreetmap.org/?mlat=60.37467&amp;mlon=25.26565#map=18/60.37467/25.26565">Näytä isommalla kartalla</a></small><br>
           <iframe class="mapWindow" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=25.261811614036564%2C60.3735026756682%2C25.269482731819156%2C60.37583888714842&amp;layer=mapnik&amp;marker=60.37466947646111%2C25.265647172927856" style="border: 1px solid black"></iframe>
         </div>
       </div>
