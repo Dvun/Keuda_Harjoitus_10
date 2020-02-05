@@ -30,7 +30,37 @@
       </div>
       <div class="registerLoginBtn">
         <a class="register registrBtn" href="#">Register</a>
+        <div class="registerWindow">
+          <button class="button closeRegister">X</button>
+          <h3>New User</h3>
+          <form action="" method="post">
+            <label for="name">First Name</label>
+            <input type="text" placeholder="First Name" id="name" name="name" required>
+            <label for="lastName">Last Name</label>
+            <input type="text" placeholder="Last Name" id="lastName" name="lastName" required>
+            <label for="email">Email</label>
+            <input type="text" placeholder="Email" id="email" name="email" required>
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" id="password" name="password" required>
+            <div class="registBtn">
+              <a class="register registrBtn" href="#">Register</a>
+            </div>
+          </form>
+        </div>
         <a class="register loginBtn" href="#">Login</a>
+        <div class="loginWindow">
+          <button class="button closeLogin">X</button>
+          <h3>Login</h3>
+          <form action="" method="post">
+            <label for="email">Email</label>
+            <input type="text" placeholder="Email" id="email" name="email" required>
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" id="password" name="password" required>
+            <div class="loginBtn">
+              <a class="register loginBtn" href="#">Login</a>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </header>
@@ -71,5 +101,6 @@
 
   </div>
 
+  <script src="./script/registerLogin.js"></script>
 </body>
 </html>

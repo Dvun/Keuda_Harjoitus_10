@@ -22,7 +22,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   grid-template-columns: 3fr 10fr;
-  grid-template-rows: 130px 10fr 80px;
+  grid-template-rows: 135px 10fr 80px;
   gap: 5px;
   height: 100vh;
 }
@@ -77,6 +77,122 @@ footer {
   width: 100%;
   border: 1px solid grey;
   background-color: grey;
+}
+
+.registerWindow {
+  padding: 10px;
+  display: none;
+  flex-direction: column;
+  width: 310px;
+  height: 360px;
+  background-color: white;
+  position: absolute;
+  border: 2px solid grey;
+  border-radius: 4px;
+  right: 380px;
+  box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35);
+  .closeRegister {
+    position: absolute;
+    right: 0;
+    margin-top: -8px;
+    background-color: white;
+  }
+  h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    label {
+      padding: 0;
+      font-size: 13px;
+      margin-bottom: 10px;
+      opacity: .3;
+    }
+    input {
+      width: 100%;
+      margin-bottom: 5px;
+      padding: 5px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 2px solid grey;
+    }
+    .registBtn {
+      display: flex;
+      justify-content: center;
+      .registrBtn {
+        width: 135px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.loginWindow {
+  padding: 10px;
+  display: none;
+  flex-direction: column;
+  width: 310px;
+  height: 250px;
+  background-color: white;
+  position: absolute;
+  border: 2px solid grey;
+  border-radius: 4px;
+  right: 380px;
+  box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35);
+  .closeLogin {
+    position: absolute;
+    right: 0;
+    margin-top: -8px;
+    background-color: white;
+  }
+  h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    label {
+      padding: 0;
+      font-size: 13px;
+      margin-bottom: 5px;
+      opacity: .3;
+    }
+    input {
+      width: 100%;
+      margin-bottom: 5px;
+      padding: 5px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 2px solid grey;
+    }
+    .loginBtn {
+      display: flex;
+      justify-content: center;
+      .loginBtn {
+        width: 135px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.registerWindow.active {
+  display: flex;
+}
+
+.loginWindow.active {
+  display: flex;
 }
 
 @import 'header.less';
