@@ -31,11 +31,11 @@
         <h1 class="companyName">Our Best WorldShop</h1>
       </div>
       <div class="registerLoginBtn">
-        <a class="register registrBtn" href="#">Register</a>
+        <a class="registerAndLogin registrBtn" href="#">Register</a>
         <div class="registerWindow">
           <button class="button closeRegister">X</button>
           <h3>New User</h3>
-          <form action="" method="post">
+          <form class="registerForm" action="" method="post">
             <label for="name">First Name</label>
             <input type="text" placeholder="First Name" id="name" name="name" required>
             <label for="lastName">Last Name</label>
@@ -45,11 +45,11 @@
             <label for="password">Password</label>
             <input type="password" placeholder="Password" id="password" name="password" required>
             <div class="registBtn">
-              <a class="register registrBtn" href="#">Register</a>
+              <button class="registerAndLogin registrBtn" type="submit">Register</button>
             </div>
           </form>
         </div>
-        <a class="register loginBtn" href="#">Login</a>
+        <a class="registerAndLogin loginBtn" href="#">Login</a>
         <div class="loginWindow">
           <button class="button closeLogin">X</button>
           <h3>Login</h3>
@@ -59,7 +59,7 @@
             <label for="password">Password</label>
             <input type="password" placeholder="Password" id="password" name="password" required>
             <div class="loginBtn">
-              <a class="register loginBtn" href="#">Login</a>
+              <button class="registerAndLogin loginBtn" type="submit">Login</button>
             </div>
           </form>
         </div>
