@@ -80,12 +80,15 @@ document.addEventListener('DOMContentLoaded', () => {
           })
         })
 
-
+        
         let addToBasket = document.querySelector('.addToBasket')
-        addToBasket.onclick = () => {
-          localStorage.setItem('id', cardsData[i].image)
-          console.log(localStorage.getItem('id'));
-          
+        let count = 0
+        addToBasket.onclick = (event) => {
+          localStorage.setItem('price', cardsData[i].price)
+          localStorage.setItem('image', cardsData[i].image)
+          localStorage.setItem('id', cardsData[i].id)
+          count ++
+          localStorage.setItem('count', count)
         }
       })      
     }
