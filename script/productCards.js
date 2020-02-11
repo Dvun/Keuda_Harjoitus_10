@@ -47,9 +47,12 @@ document.addEventListener('DOMContentLoaded', () => {
       card.addEventListener('mouseenter', event => {
         event.preventDefault()
         let cardText = event.target.querySelector('.aboutText')
-        cardText.innerHTML = `<button class="tilaa"><a href="tilaa.html">Tilaa</a></button>
+        cardText.innerHTML = `<button class="addToBasket">Tilaa</button>
                               <button class="katso">Katso lisää</button>`
         
+
+        
+
                             
         let katso = document.querySelector('.katso')
         katso.onclick = () => {
@@ -62,6 +65,8 @@ document.addEventListener('DOMContentLoaded', () => {
           tuoteHinta.innerHTML = `<span>${cardsData[i].price} &#8364;</span>`
           tuoteImg.innerHTML = `<img class="tuoteImg" src=${cardsData[i].image}>`
           tuoteText.innerHTML = cardsData[i].about
+
+          return cardsData[i]
         }
         
 
@@ -74,6 +79,14 @@ document.addEventListener('DOMContentLoaded', () => {
             cardText.innerText = cardsData[i].about
           })
         })
+
+
+        let addToBasket = document.querySelector('.addToBasket')
+        addToBasket.onclick = () => {
+          localStorage.setItem('id', cardsData[i].image)
+          console.log(localStorage.getItem('id'));
+          
+        }
       })      
     }
     let closeWindow = document.querySelector('.close')
@@ -81,9 +94,19 @@ document.addEventListener('DOMContentLoaded', () => {
       katsoWindow.style.display = 'none'
     }
   }
+  
+  let basketPic = document.querySelector('.basketPic')
+  basketPic.onclick = () => {
+    let basketWindow = document.querySelector('.basket').style.display = 'flex'
+  }
 
+  let cartClose = document.querySelector('.cart-close')
+  cartClose.onclick = () => {
+    let basketWindow = document.querySelector('.basket').style.display = 'none'
+  }
 
-    
+  
+  
     
       
 })
